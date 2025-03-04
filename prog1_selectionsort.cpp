@@ -34,6 +34,7 @@ int main(){
         int arr[size];
         generateRandomArray(arr, size);
 
+        // measure execution time
         clock_t t1 = clock();
         selectionSort(arr, size);
         clock_t t2 = clock();
@@ -41,5 +42,6 @@ int main(){
         double time = (double)(t2 - t1)/CLOCKS_PER_SEC;
         cout << "n = " << size << " Time: " << time << endl;
     }
+
     return 0;
 }
