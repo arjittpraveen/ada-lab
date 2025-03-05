@@ -7,7 +7,7 @@ void selectionSort(int arr[], int size){
     int minIndex;
 
     for (int i = 0; i < size - 1; i++){
-        int minIndex = i;
+        minIndex = i;
         for (int j = i + 1; j < size; j++){
             if (arr[j] < arr[minIndex]){
                 minIndex = j;
@@ -25,9 +25,7 @@ void generateRandomArray(int arr[], int size){
 
 int main(){
 
-    int start = 5000;
-    int end = 50000;
-    int step = 5000;
+    int start = 5000, end = 50000, step = 5000;
 
     for (int size = start; size <= end; size += step){
 
